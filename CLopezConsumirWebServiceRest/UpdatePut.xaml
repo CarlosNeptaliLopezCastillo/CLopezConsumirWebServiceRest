@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CLopezConsumirWebServiceRest.UpdatePut"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Actualizar Datos en Xamarin.Forms!" HorizontalTextAlignment="Center"/>
+            
+            <Entry x:Name="txtCodigoPut" />
+            <Entry x:Name="txtNombrePut" />
+            <Entry x:Name="txtApellidoPut" />
+            <Entry x:Name="txtEdadPut"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" x:Name="btnActualizar"
+                    Text="Actualizar"
+                    Clicked="btnActualizar_Clicked"/>
+
+                <Button Grid.Row="0" Grid.Column="1" x:Name="btnRegresar"
+                        Text="Regresar"
+                        Clicked="btnRegresar_Clicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
